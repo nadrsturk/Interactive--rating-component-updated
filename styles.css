@@ -74,7 +74,6 @@ form {
 }
 
 .rating-group input[type='radio'] {
-  /* hide radio button and use labels for custom button look w/ radio functionality */
   position: absolute;
   opacity: 0;
 }
