@@ -1,0 +1,155 @@
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* global */
+
+body {
+  font-family: 'Overpass', sans-serif;
+  background-color: hsl(216, 12%, 8%);
+}
+
+img {
+  display: block;
+}
+
+h1,
+h2 {
+  color:hsl(0, 0%, 100%);
+  font-size: 1.6rem;
+}
+
+p {
+  color: hsl(216, 12%, 54%);
+  margin: 1rem 0;
+  font-size: 15px;
+  line-height: 1.5rem;
+}
+
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  margin: auto;
+}
+
+.card {
+  background-color:hsl(213, 19%, 18%);
+  padding: 1.5rem 2rem;
+  border-radius: 15px;
+  min-height: 420px;
+  max-width: 420px;
+}
+
+
+.icon {
+  padding: 1rem;
+  background-color:hsl(213, 19%, 23%);
+  border-radius: 50%;
+  margin: 1.5rem 0;
+  max-width: 45px;
+}
+
+form {
+  margin: 2rem 0;
+}
+
+.form-group {
+  margin: 1.5rem 0;
+}
+
+.rating-group {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.rating-group input[type='radio'] {
+  /* hide radio button and use labels for custom button look w/ radio functionality */
+  position: absolute;
+  opacity: 0;
+}
+
+.rating-group input[type='radio'] + label {
+  cursor: pointer;
+  background-color:hsl(213, 19%, 23%);
+  color: hsl(217, 12%, 63%);
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  margin-right:10px;
+}
+
+
+.rating-group input[type='radio'] {
+  /* Hide radio button and use labels for custom button look w/ radio functionality */
+  position: absolute;
+  opacity: 0;
+}
+
+/* Style for label when radio button is hovered or focused */
+.rating-group input[type='radio']:hover + label,
+.rating-group input[type='radio']:focus + label {
+  /* Apply background color and text color */
+  background-color:  hsl(216, 12%, 54%);
+  color:hsl(0, 0%, 100%);
+}
+
+/* Style for label when radio button is checked */
+.rating-group input[type='radio']:checked + label {
+  /* Apply background color */
+  background-color: hsl(25, 97%, 53%);;
+}
+
+
+button {
+  width: 100%;
+  height: 2.8rem;
+  color: hsl(0, 0%, 100%);
+  background-color:hsl(25, 97%, 53%);
+  border: none;
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-weight:700;
+  cursor: pointer;
+  transition: all 0.2s;
+  letter-spacing:10px;
+}
+
+button:hover {
+  color: hsl(25, 97%, 53%);;
+  background-color: hsl(0, 0%, 100%);
+}
+
+
+#thank-you {
+  display: none;
+  text-align: center;
+}
+
+#thank-you img {
+  margin: 1.5rem auto;
+}
+
+.thank-you-msg {
+  background-color: hsl(213, 19%, 23%);
+  color: hsl(25, 97%, 53%);;
+  padding: 0.3rem;
+  border-radius: 20px;
+  width: 60%;
+  margin: 1.5rem auto;
+}
